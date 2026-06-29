@@ -2,19 +2,30 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "commonjs",
+    "moduleResolution": "node",
     "lib": ["ES2022"],
+    "types": ["node", "express"],
+
     "outDir": "./dist",
     "rootDir": "./src",
+
     "strict": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+
     "resolveJsonModule": true,
+
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
+
     "ignoreDeprecations": "6.0",
+
     "baseUrl": "./src",
+
     "paths": {
       "@/*": ["./*"],
       "@controllers/*": ["./controllers/*"],
